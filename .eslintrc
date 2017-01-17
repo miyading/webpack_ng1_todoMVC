@@ -1,0 +1,23 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parser": "",
+  "plugins": [
+  ],
+  "globals": {
+    "browser": true,
+    "expect": true,
+    "mountNode": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "destructuring": true,
+    "defaultParams": true
+  },
+  "rules": {
+  }
+}
