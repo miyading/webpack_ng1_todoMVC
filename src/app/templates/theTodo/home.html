@@ -1,6 +1,9 @@
-<div>
-    <span>TR Check</span><br/><br/>
-
-    <add-item msg="msg" on-add="addItem(item)"></add-item><br/><br/>
-    <todo-item list="list" on-delete="deleteItem(item)"></todo-item>
+<div class="home-container">
+  <div class="home-body">
+    <p>Todo list</p>
+    <div class="todo-list">
+      <add-item msg="msg" on-add="addItem(item)" on-reset="reset()"></add-item>
+      <todo-item list="list" on-delete="deleteItem(item)"></todo-item>
+    </div>
+  </div>
 </div>

@@ -1,7 +1,5 @@
-<div ng-repeat="item in list">
-    <input type="checkbox" ng-model="item.checkbox" ng-checked="item.checkbox" />
-    <input type="text" ng-model="item.text" />
-    <a href="" ng-click="delete({item: item})">&times;</a>
+<div ng-repeat="item in list" class="item-detail">
+  <input type="text" ng-model="item.text" ng-class="{'item-completed': item.checkbox}" />
+  <input type="checkbox" ng-model="item.checkbox" ng-checked="item.checkbox" />
+  <a class="delete-link" href="" ng-click="delete({item: item})">&times;</a>
 </div>
-
-<hr/>

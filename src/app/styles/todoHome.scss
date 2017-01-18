@@ -1,0 +1,48 @@
+.home-container {
+  background-color: white;
+}
+
+.home-body {
+  background-color: lightgray;
+  margin: 20%;
+
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .todo-list {
+    padding: 0 0 5% 5%;
+  }
+
+  input[type='text'] {
+    width: 60%;
+    height: 30px;
+    font-size: 1em;
+  }
+
+  input[type='checkbox'] {
+    transform: scale(2);
+    margin: 0 2% 0;
+  }
+
+  .item-completed {
+    text-decoration: line-through;
+  }
+
+  button {
+    font-size: 1em;
+    height: 40px;
+    width: 10%;
+    border-radius: 1em;
+    border: 1em;
+  }
+
+  .item-detail {
+    margin-top: 2%;
+  }
+
+  .delete-link {
+    font-size: 2em;
+  }
+}

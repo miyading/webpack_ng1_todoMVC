@@ -1,13 +1,13 @@
-var angular = require('angular');
+const angular = require('angular');
 
-angular.module('trCheckApp')
-    .directive('todoItem', function() {
-        return {
-            restrict: 'E',
-            scope: {
-                list: '=',
-                delete: '&onDelete'
-            },
-            template: require('../templates/theTodo/todo-item.html')
-        };
-    });
+angular.module('todoApp')
+  .directive('todoItem', function () {
+    return {
+      restrict: 'E',
+      scope: {
+        list: '=',
+        delete: '&onDelete'
+      },
+      template: require('../templates/theTodo/todo-item.html')
+    };
+  });

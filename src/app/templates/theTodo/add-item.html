@@ -1,7 +1,5 @@
-<input type="text" placeholder="New to do" ng-model="msg" />
-<button ng-click="add({item:{isCompleted: false,
-        text: msg,
-        checkbox: false}})">
+<input type="text" placeholder="New to do" ng-model="msg"/>
+<button ng-click="add({item:{text: msg, checkbox: false}})">
   Add
 </button>
-<button>Reset</button>
+<button ng-click="reset()">Reset</button>

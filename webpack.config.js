@@ -3,7 +3,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry:{
-    app: ['./src/app/app', './src/app/directives/addItem', './src/app/directives/todoItem'],
+    app: ['./src/app/app', './src/app/directives/addItem', './src/app/directives/todoItem', './src/app/controllers/todoCtrl',
+    './src/app/styles/todoHome.scss'],
     vendor: [
       'angular'
     ]
@@ -27,8 +28,8 @@ module.exports = {
     ],
     loaders: [
       {
-        test: /\.css$/,
-        loader: 'style!css'
+        test: /\.css|\.scss$/,
+        loader: 'style!css!sass'
       },
       {
         test: '/\.js|\.jsx|\.es6$',
